@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Function</title>
+</head>
+<style>
+    .newOne{
+        width: 700px;
+        height: 300px;
+        margin: 14% 25%;
+        position: relative;
+    }
+    img{
+        position: absolute;
+        z-index: 1;
+        width: 50px;
+        offset: path('M 50 80 C 50 -120 350 180 350 80 ') 45deg;
+        animation:moveImg 4s 1s 3;
+    }
+    svg{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    @keyframes moveImg {
+        100%{
+            offset-distance: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="newOne">
+        <img src="Images/soccer-ball-svgrepo-com.svg" alt="">
+        <svg fill="none" stroke="gray" stroke-width="2" stroke-dasharray="5,5">
+            <path d="M 50 80 C 50 -120 350 180 350 80" />
+          </svg>     
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
