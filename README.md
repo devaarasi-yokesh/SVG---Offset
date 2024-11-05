@@ -1,0 +1,3 @@
+- Understanding the concept of Offset-path with SVG.
+- Creating SVG files and editing the shapes along with it.
+- Animating along the custom path by 'offset-distance'
